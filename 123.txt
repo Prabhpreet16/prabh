@@ -1,1 +1,5 @@
-hello this is master
+<<<<<<< HEAD
+
+=======
+hello this is newbranch
+>>>>>>> newbranch
