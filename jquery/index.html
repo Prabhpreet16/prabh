@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To The New</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="jquery_session.js"></script>
+    <style>
+        .container{
+            width: 760px;
+            margin: 0 auto;
+        }
+        div[id^='ques']{
+            padding: 10px;
+            border: 2px red solid;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="ques1">
+        <h3>Ques 1.</h3>
+        <h3>Console "Hello Word" in document.ready function</h3>
+        <div>Open console to see answer.</div>
+    </div>
+    <div id="ques2">
+        <h3>Ques 2.</h3>
+        <h3>Select a ID name "#test" and add class "load" when DOM is loaded</h3>
+        <div id="test">This is div.</div>
+    </div>
+    <div id="ques3">
+        <h3>Ques 3.</h3>
+        <h3>Change the color of element which class name end with "-new"</h3>
+        <div class="to-the-new">TO The New</div>
+        <div class="newer">I am a Newer.</div>
+    </div>
+    <div id="ques4">
+        <h3>Ques 4.</h3>
+        <h3>Disable submit button using jquery attr method</h3>
+        <button id="submit-btn">Submit</button>
+    </div>
+    <div id="ques5">
+        <h3>Ques 5.</h3>
+        <h3>Change the font size of ".target" which has parent element with id name "#main"</h3>
+        <div id="main">
+            <div class="target">Hello There!</div>
+        </div>
+    </div>
+    <div id="ques6">
+        <h3>Ques 6.</h3>
+        <h3>After page load change the HTML of div element with "p" element</h3>
+        <div class="first">
+            This is first div.
+        </div>
+        <div class="second">
+            This is second div.
+        </div>
+    </div>
+    <div id="ques7">
+        <h3>Ques 7.</h3>
+        <h3>Bind a click function to an "click" element and append next "click" next to it.</h3>
+        <button class="first">Click Me!</button>
+        <div id="append-btn"></div>
+    </div>
+    <div id="ques8">
+        <h3>Ques 8.</h3>
+        <h3>Click event not working on element which added dynamically or via script, make it work using .on method</h3>
+        <div>
+            <button id="add_ele">Add element</button>
+            <div id="add-btn"></div>
+        </div>
+    </div>
+    <div id="ques9">
+        <h3>Ques 9.</h3>
+        <h3>Get dropdown selected value on onchange event and append in div container</h3>
+        <select name="competency" id="comp">
+            <option value="JVM">JVM</option>
+            <option value="MEAN">MEAN</option>
+            <option value="FEEN">FEEN</option>
+            <option value="DevOps">DevOps</option>
+        </select>
+        <div id="res-div"></div>
+    </div>
+    <div id="ques10">
+        <h3>Ques 10.</h3>
+        <h3>Create a dropdown menu using hover method in jquery</h3>
+        <div id="drp-dwn1">Show Competency</div>
+    </div>
+    <div id="ques11">
+        <h3>Ques 11.</h3>
+        <h3>On clicking on "google" tag. It is taking us to google home page. Stop it from happening.</h3>
+        <a id="google-link" href="www.google.com">Go to Google.com</a>
+    </div>
+    <div id="ques12">
+        <h3>Ques 12.</h3>
+        <h3>We have bind a click function to parent div but we want stop it from performing when user clicks on its child li</h3>
+        <div id="parent-div" style="padding: 10px; margin: 10px; border: 2px blue solid; background: lightsteelblue">Parent div
+            <div id="child-div" style="padding: 10px; margin: 10px; border: 2px green solid; background: lightcoral">Child Div</div>
+        </div>
+    </div>
+    <div id="ques13">
+        <h3>Ques 13.</h3>
+        <h3>Get the max height of elements using jquery each method</h3>
+        <div id="find-height">
+            <p>This is paragraph.</p>
+            <h2>This is h2 heading.</h2>
+            <h4>This is h4 heading.</h4>
+            <div>This is div.</div>
+        </div>
+        <div><button id="cal-height">Calculate Height</button></div>
+        <div id="shw-height"></div>
+    </div>
+    <div id="ques14">
+        <h3>Ques 14.</h3>
+        <h3>Change color of every cell which has number larger than 10.</h3>
+        <div>
+            <table  id="tbl" style="text-align: center; border: 3px blue solid; border-collapse: collapse; width: 100%;">
+                <thead style="border: 3px blue solid; border-collapse: collapse;">
+                    <th>col 1</th>
+                    <th>col 2</th>
+                    <th>col 3</th>
+                    <th>col 4</th>
+                </thead>
+                <tr>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>87</td>
+                    <td>16</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="ques15">
+        <h3>Ques 15.</h3>
+        <h3>Retrive the data from server using ajax get call</h3>
+        <div>
+            <button class="get-data"> Get Data by Ajax</button>
+            <table style="width: 100%;">
+                <thead>
+                <tr style="border: 2px blue solid; border-collapse: collapse;  text-align: left">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                </tr>
+                </thead>
+                <tbody class="shw-table-1">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="ques16">
+        <h3>Ques 16.</h3>
+        <h3>Add cross button on row and bind click function which make a delete request to server, after success event remove the row from dom</h3>
+        <div>
+            <table style="width: 100%;">
+                <thead>
+                <tr style="border: 2px blue solid; border-collapse: collapse;  text-align: left">
+                    <th>UserId</th>
+                    <th>Title</th>
+                    <th>Completed</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody class="shw-table-2"></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="ques17">
+        <h3>Ques 17.</h3>
+        <h3>Create a image array and in div create a slide show to animate images of delay of 500ms.</h3>
+        <button id="start-ss">Start Slideshow!</button>
+        <div>
+            <img id="shw-images" src="images/1.jpg" alt="images" style="width: 250px; height: 250px;">
+        </div>
+    </div>
+</div>
+</body>
+</html>
