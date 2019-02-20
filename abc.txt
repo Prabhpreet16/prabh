@@ -1,12 +1,1 @@
-hello world
-<<<<<<< HEAD
-12345
-changes
-hfbdbdsjkn
-hjvcj
-chbcb
-=======
-hello 
-change
-hcscjbcxks
->>>>>>> branch1
+“abcde”
